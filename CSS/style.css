@@ -1,0 +1,90 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 1200px;
+    border: 1px saddlebrown;
+}
+header{
+    background-color: rgb(79, 92, 55);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    margin-right: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: rgb(236, 130, 9);
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(251, 251, 253);
+}
+.slideshow{
+width: 100%;
+height: 800px;
+}
+.slideshow image{
+   display: block; 
+   margin: auto;
+}
+.bienvenida{
+   margin-top: 30px; 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px;
+}
+.bienvenida img{
+    border-radius: 16px;
+}
+.bienvenida h1,p{
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(3, 0, 5);
+}
+/*Estilos responsivos (Media Querias)*/
+
+@media (max-width: 1024px){
+    .contenedor{
+        background-color: rgb(6, 206, 89);
+    }
+    flex-direction: columns;
+    align-items: flex-star;
+    background-color: green;
+}
+.logo{
+    margin-bottom: 20px; /*agrega un espacio entre el logo y el menu de navegacion*/
+}
+nav ul{
+    flex-direction: column; /*deja los elementos de forma vertical*/
+    -ms-flex-align: center;
+}
+nav ul li{
+    margin: 20px 0;
+}
+.slideshow{
+    height: 300px; /* para ajustar la altura del slideshow*/
+}
+.bienvenida{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 400px) and (max-width: 768px){
+    .contenedor{
+        background-color: blue;
+    }
+}
